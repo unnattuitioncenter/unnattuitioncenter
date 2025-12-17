@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://unnattuitioncenter.com/sitemap.xml
+Sitemap: https://unnattuitioncenter.github.io/unnattuitioncenter/sitemap.xml
