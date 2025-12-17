@@ -101,7 +101,7 @@
 
     <header>
         <div class="container nav">
-            <a href="index.html" class="brand">Unnat<span>.Digital</span></a>
+            <a href="digital.html" class="brand">Unaat<span> Digital</span></a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#services">Services</a></li>
@@ -126,8 +126,60 @@
             <p>Stop competing. Start dominating. We build websites and apps that turn local businesses into market
                 leaders.</p>
             <div class="hero-btns">
-                <a href="mailto:contact@unnat.com" class="btn btn-primary">Get a Quote</a>
+                <a href="#calculator" class="btn btn-primary">Calculate Project Cost</a>
                 <a href="#services" class="btn btn-outline">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Cost Calculator -->
+    <section id="calculator" class="calculator-section" style="padding: 60px 0; background: #0a1120;">
+        <div class="container"
+            style="max-width: 800px; background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);">
+            <div class="section-header">
+                <h2>💰 Instant Quote Calculator</h2>
+                <p style="color: var(--text-secondary);">Estimate your investment in 10 seconds.</p>
+            </div>
+
+            <div class="calc-form">
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 10px; color: #fff;">What do you need?</label>
+                    <select id="serviceType"
+                        style="width: 100%; padding: 15px; border-radius: 10px; background: #1a2332; color: #fff; border: 1px solid #334155;">
+                        <option value="15000">Business Website (5 Pages)</option>
+                        <option value="30000">E-Commerce Website (Store)</option>
+                        <option value="40000">Android App (Native)</option>
+                        <option value="10000">Social Media (Monthly)</option>
+                        <option value="15000">SEO (Monthly)</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 30px;">
+                    <label style="display: block; margin-bottom: 10px; color: #fff;">Add-ons?</label>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <label style="color: #cbd5e1; cursor: pointer;">
+                            <input type="checkbox" value="5000" class="calc-addon"> Urgent Delivery (+₹5k)
+                        </label>
+                        <label style="color: #cbd5e1; cursor: pointer;">
+                            <input type="checkbox" value="8000" class="calc-addon"> 1 Year Maintenance (+₹8k)
+                        </label>
+                        <label style="color: #cbd5e1; cursor: pointer;">
+                            <input type="checkbox" value="5000" class="calc-addon"> Logo Design (+₹5k)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-result" style="text-align: center; border-top: 1px solid #334155; padding-top: 30px;">
+                    <p style="color: var(--text-secondary);">Estimated Cost:</p>
+                    <div id="totalPrice"
+                        style="font-size: 3rem; font-weight: 800; color: var(--accent-green); margin: 10px 0;">₹15,000
+                    </div>
+                    <a id="bookPriceBtn" href="#" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+                        <i class="fab fa-whatsapp"></i> Lock this Price on WhatsApp
+                    </a>
+                    <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">*Final quote may vary based on exact
+                        requirements.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -141,43 +193,64 @@
 
             <div class="grid">
                 <!-- Website Card -->
-                <div class="card">
+                <a href="web-design-kurukshetra.html" class="card"
+                    style="text-decoration: none; color: inherit; display: block;">
                     <div class="icon-box">💻</div>
                     <h3>Code-First Web Design</h3>
-                    <p>We don't use slow page builders. We hand-code HTML/CSS for 100/100 Google Speed scores. Your
-                        competitors won't stand a chance.</p>
+                    <p>We don't use slow page builders. We hand-code HTML/CSS for 100/100 Google Speed scores.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">HTML5</span>
                         <span class="tech-tag">React</span>
-                        <span class="tech-tag">Tailwind</span>
                     </div>
-                </div>
+                </a>
 
                 <!-- App Card -->
-                <div class="card">
+                <a href="app-development-kurukshetra.html" class="card"
+                    style="text-decoration: none; color: inherit; display: block;">
                     <div class="icon-box">📱</div>
                     <h3>Native App Development</h3>
-                    <p>Put your brand in your customer's pocket. High-performance Android & iOS apps with smooth
-                        animations and offline capabilities.</p>
+                    <p>High-performance Android & iOS apps with smooth animations and offline capabilities.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Flutter</span>
                         <span class="tech-tag">Kotlin</span>
-                        <span class="tech-tag">Swift</span>
                     </div>
-                </div>
+                </a>
 
                 <!-- SEO Card -->
-                <div class="card">
+                <a href="seo-services-kurukshetra.html" class="card"
+                    style="text-decoration: none; color: inherit; display: block;">
                     <div class="icon-box">🚀</div>
                     <h3>Local SEO Dominance</h3>
-                    <p>Rank #1 for "Near Me" searches. We implement Schema Markup, GMB optimization, and content
-                        strategies to capture all local traffic.</p>
+                    <p>Rank #1 for "Near Me" searches. We optimize GMB and content to capture local traffic.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Schema</span>
-                        <span class="tech-tag">Analytics</span>
                         <span class="tech-tag">GMB</span>
                     </div>
-                </div>
+                </a>
+
+                <!-- SMM Card -->
+                <a href="social-media-marketing.html" class="card"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="icon-box">📢</div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Viral Instagram Reels & Facebook Ads. We turn scrolls into customers.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Ads</span>
+                        <span class="tech-tag">Reels</span>
+                    </div>
+                </a>
+
+                <!-- PPC Card -->
+                <a href="google-ads-kurukshetra.html" class="card"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="icon-box">⚡</div>
+                    <h3>Google Ads (PPC)</h3>
+                    <p>Skip the SEO wait. Get instant leads with targeted Pay-Per-Click campaigns.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AdWords</span>
+                        <span class="tech-tag">Leads</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -275,6 +348,37 @@
                         Started</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Section (High Ticket) -->
+    <section class="enterprise-section"
+        style="padding: 100px 0; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-attachment: fixed;">
+        <div class="container" style="text-align: center;">
+            <span class="enterprise-badge">For Large Organizations</span>
+            <h2 style="font-size: 3rem; margin: 20px 0;">Build an Empire, Not Just a Website.</h2>
+            <p style="font-size: 1.2rem; color: #cbd5e1; max-width: 700px; margin: 0 auto 40px;">
+                Factories, Hospitals, and Educational Institutions need more than a template. They need ERPs, CRMs, and
+                Automations.
+            </p>
+
+            <div class="grid" style="text-align: left; margin-top: 50px;">
+                <div class="card" style="background: rgba(0,0,0,0.6); backdrop-filter: blur(10px);">
+                    <h3>🏭 Smart Factories</h3>
+                    <p>Inventory management systems and staff tracking apps for Kurukshetra's industrial sector.</p>
+                </div>
+                <div class="card" style="background: rgba(0,0,0,0.6); backdrop-filter: blur(10px);">
+                    <h3>🏥 Hospital Management</h3>
+                    <p>Patient booking engines and digital record keeping (EMR) systems.</p>
+                </div>
+                <div class="card" style="background: rgba(0,0,0,0.6); backdrop-filter: blur(10px);">
+                    <h3>🎓 Education ERP</h3>
+                    <p>Complete student management software (Fee, Attendance, Results) for Schools.</p>
+                </div>
+            </div>
+
+            <a href="tel:+918307264895" class="btn btn-primary"
+                style="margin-top: 60px; padding: 20px 50px; font-size: 1.2rem;">Book Enterprise Consultation</a>
         </div>
     </section>
 
